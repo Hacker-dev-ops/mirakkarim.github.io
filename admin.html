@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Админ-панель</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<header>Админ-панель Mirakkarim</header>
+<main>
+    <h1>Введите пароль для доступа:</h1>
+    <input type="password" id="admin-password" placeholder="Пароль">
+    <button onclick="checkAdminPassword()">Войти</button>
+    <div id="admin-panel" style="display:none;">
+        <h2>Панель управления</h2>
+        <input type="text" id="new-page-title" placeholder="Заголовок страницы">
+        <textarea id="new-page-content" placeholder="Контент страницы"></textarea>
+        <button onclick="addPage()">Добавить страницу</button>
+        <div id="pages-list"></div>
+    </div>
+</main>
+<footer>© 2026 Карим Альбарри</footer>
+</body>
+</html>
